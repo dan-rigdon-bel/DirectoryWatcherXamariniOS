@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370098C8188BAA4C00734192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370098C7188BAA4C00734192 /* Foundation.framework */; };
+		370098D7188BAA4C00734192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370098C7188BAA4C00734192 /* Foundation.framework */; };
+		370098D9188BAA4C00734192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370098D8188BAA4C00734192 /* UIKit.framework */; };
+		370098DC188BAA4C00734192 /* libDirectoryWatcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370098C4188BAA4C00734192 /* libDirectoryWatcher.a */; };
+		370098EF188BAA6D00734192 /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 370098EE188BAA6D00734192 /* DirectoryWatcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		370098DA188BAA4C00734192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 370098BC188BAA4C00734192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 370098C3188BAA4C00734192;
+			remoteInfo = DirectoryWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		370098C2188BAA4C00734192 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		370098C4188BAA4C00734192 /* libDirectoryWatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDirectoryWatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		370098C7188BAA4C00734192 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		370098CB188BAA4C00734192 /* DirectoryWatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DirectoryWatcher-Prefix.pch"; sourceTree = "<group>"; };
+		370098D4188BAA4C00734192 /* DirectoryWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectoryWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		370098D8188BAA4C00734192 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		370098ED188BAA6D00734192 /* DirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
+		370098EE188BAA6D00734192 /* DirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		370098C1188BAA4C00734192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370098C8188BAA4C00734192 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370098D1188BAA4C00734192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370098D9188BAA4C00734192 /* UIKit.framework in Frameworks */,
+				370098DC188BAA4C00734192 /* libDirectoryWatcher.a in Frameworks */,
+				370098D7188BAA4C00734192 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		370098BB188BAA4C00734192 = {
+			isa = PBXGroup;
+			children = (
+				370098C9188BAA4C00734192 /* DirectoryWatcher */,
+				370098C6188BAA4C00734192 /* Frameworks */,
+				370098C5188BAA4C00734192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		370098C5188BAA4C00734192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				370098C4188BAA4C00734192 /* libDirectoryWatcher.a */,
+				370098D4188BAA4C00734192 /* DirectoryWatcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		370098C6188BAA4C00734192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				370098C7188BAA4C00734192 /* Foundation.framework */,
+				370098D8188BAA4C00734192 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		370098C9188BAA4C00734192 /* DirectoryWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				370098ED188BAA6D00734192 /* DirectoryWatcher.h */,
+				370098EE188BAA6D00734192 /* DirectoryWatcher.m */,
+				370098CA188BAA4C00734192 /* Supporting Files */,
+			);
+			path = DirectoryWatcher;
+			sourceTree = "<group>";
+		};
+		370098CA188BAA4C00734192 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				370098CB188BAA4C00734192 /* DirectoryWatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		370098C3188BAA4C00734192 /* DirectoryWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370098E7188BAA4C00734192 /* Build configuration list for PBXNativeTarget "DirectoryWatcher" */;
+			buildPhases = (
+				370098C0188BAA4C00734192 /* Sources */,
+				370098C1188BAA4C00734192 /* Frameworks */,
+				370098C2188BAA4C00734192 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectoryWatcher;
+			productName = DirectoryWatcher;
+			productReference = 370098C4188BAA4C00734192 /* libDirectoryWatcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		370098D3188BAA4C00734192 /* DirectoryWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370098EA188BAA4C00734192 /* Build configuration list for PBXNativeTarget "DirectoryWatcherTests" */;
+			buildPhases = (
+				370098D0188BAA4C00734192 /* Sources */,
+				370098D1188BAA4C00734192 /* Frameworks */,
+				370098D2188BAA4C00734192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				370098DB188BAA4C00734192 /* PBXTargetDependency */,
+			);
+			name = DirectoryWatcherTests;
+			productName = DirectoryWatcherTests;
+			productReference = 370098D4188BAA4C00734192 /* DirectoryWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		370098BC188BAA4C00734192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Robert McNeel and Associates";
+			};
+			buildConfigurationList = 370098BF188BAA4C00734192 /* Build configuration list for PBXProject "DirectoryWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 370098BB188BAA4C00734192;
+			productRefGroup = 370098C5188BAA4C00734192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				370098C3188BAA4C00734192 /* DirectoryWatcher */,
+				370098D3188BAA4C00734192 /* DirectoryWatcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		370098D2188BAA4C00734192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		370098C0188BAA4C00734192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370098EF188BAA6D00734192 /* DirectoryWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370098D0188BAA4C00734192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		370098DB188BAA4C00734192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 370098C3188BAA4C00734192 /* DirectoryWatcher */;
+			targetProxy = 370098DA188BAA4C00734192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		370098E5188BAA4C00734192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		370098E6188BAA4C00734192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		370098E8188BAA4C00734192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DirectoryWatcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryWatcher/DirectoryWatcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		370098E9188BAA4C00734192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DirectoryWatcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryWatcher/DirectoryWatcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		370098EB188BAA4C00734192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryWatcher/DirectoryWatcher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DirectoryWatcherTests/DirectoryWatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		370098EC188BAA4C00734192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryWatcher/DirectoryWatcher-Prefix.pch";
+				INFOPLIST_FILE = "DirectoryWatcherTests/DirectoryWatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		370098BF188BAA4C00734192 /* Build configuration list for PBXProject "DirectoryWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370098E5188BAA4C00734192 /* Debug */,
+				370098E6188BAA4C00734192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370098E7188BAA4C00734192 /* Build configuration list for PBXNativeTarget "DirectoryWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370098E8188BAA4C00734192 /* Debug */,
+				370098E9188BAA4C00734192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370098EA188BAA4C00734192 /* Build configuration list for PBXNativeTarget "DirectoryWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370098EB188BAA4C00734192 /* Debug */,
+				370098EC188BAA4C00734192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 370098BC188BAA4C00734192 /* Project object */;
+}

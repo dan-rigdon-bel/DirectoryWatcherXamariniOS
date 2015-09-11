@@ -1,0 +1,9 @@
+/DirectoryWatcherNative/DirectoryWatcher/build
+/DirectoryWatcherNative/DirectoryWatcher/DirectoryWatcher.xcodeproj/xcuserdata/
+/DirectoryWatcherNative/DirectoryWatcher/DirectoryWatcher.xcodeproj/project.xcworkspace/xcuserdata/
+/DirectoryWatcherXamariniOS/bin
+/DirectoryWatcherXamariniOS/obj
+
+*.userprefs
+
+*.a
