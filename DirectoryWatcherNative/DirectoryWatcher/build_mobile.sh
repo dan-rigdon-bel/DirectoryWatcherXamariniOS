@@ -161,21 +161,6 @@ function buildForiOS() {
 	mv libDirectoryWatcher-i386.a ../../build/Release-ios
 	cd ../..
 
-	printf " Compiling armv7 version               "
-	xcodeBuild -project DirectoryWatcher.xcodeproj -target DirectoryWatcher -sdk iphoneos -arch armv7 -configuration Release clean build
-	printf "...Done\n";
-	cd build/Release-iphoneos
-	mv libDirectoryWatcher.a libDirectoryWatcher-armv7.a
-	mv libDirectoryWatcher-armv7.a ../../build/Release-ios
-	cd ../..
-
-	printf " Compiling armv7s version              "
-	xcodeBuild -project DirectoryWatcher.xcodeproj -target DirectoryWatcher -sdk iphoneos -arch armv7s -configuration Release clean build
-	printf "...Done\n";
-	cd build/Release-iphoneos
-	mv libDirectoryWatcher.a libDirectoryWatcher-armv7s.a
-	mv libDirectoryWatcher-armv7s.a ../../build/Release-ios
-	cd ../..
 
 	printf " Compiling arm64 version               "
 	xcodeBuild -project DirectoryWatcher.xcodeproj -target DirectoryWatcher -sdk iphoneos -arch arm64 -configuration Release clean build
@@ -187,7 +172,7 @@ function buildForiOS() {
 
 	printf " Creating Universal Binary             "
 	cd build/Release-ios
-	lipo -create -output libDirectoryWatcher.a libDirectoryWatcher-i386.a libDirectoryWatcher-armv7.a libDirectoryWatcher-armv7s.a libDirectoryWatcher-arm64.a
+	lipo -create -output libDirectoryWatcher.a libDirectoryWatcher-i386.a libDirectoryWatcher-arm64.a
 	printf "...Done\n";
 	cd ../..
 
