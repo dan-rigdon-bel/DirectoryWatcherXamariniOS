@@ -152,13 +152,13 @@ function buildForiOS() {
 	echo "iOS Build-------------------------------------------------------"
 	echo "Making static libDirectoryWatcher.a for iOS..."
 
-	printf " Compiling i386 version                "
+	printf " Compiling x64_86 version (Simulator)  "
 	# add: > /dev/null  to suppress output on xcodeBuilds
-	xcodeBuild -project DirectoryWatcher.xcodeproj -target DirectoryWatcher -sdk iphonesimulator -configuration Release clean build
+	xcodeBuild -project DirectoryWatcher.xcodeproj -target DirectoryWatcher -sdk iphonesimulator -arch x86_64 -configuration Release clean build
 	printf "...Done\n";
 	cd build/Release-iphonesimulator
-	mv libDirectoryWatcher.a libDirectoryWatcher-i386.a
-	mv libDirectoryWatcher-i386.a ../../build/Release-ios
+	mv libDirectoryWatcher.a libDirectoryWatcher-x86_64.a
+	mv libDirectoryWatcher-x86_64.a ../../build/Release-ios
 	cd ../..
 
 
@@ -172,7 +172,7 @@ function buildForiOS() {
 
 	printf " Creating Universal Binary             "
 	cd build/Release-ios
-	lipo -create -output libDirectoryWatcher.a libDirectoryWatcher-i386.a libDirectoryWatcher-arm64.a
+	lipo -create -output libDirectoryWatcher.a libDirectoryWatcher-x86_64.a libDirectoryWatcher-arm64.a
 	printf "...Done\n";
 	cd ../..
 
