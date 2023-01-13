@@ -9,6 +9,12 @@
     <RootNamespace>DirectoryWatcherXamariniOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>DirectoryWatcher.iOS</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <PackageId>DirectoryWatcher.iOS</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>OurMTS Team</Authors>
+    <Description>Xamarin.iOS wrapper for the Objective-C DirectoryWatcher class.</Description>
+    <RepositoryUrl>https://github.com/VictorKochetkov/DirectoryWatcherXamariniOS.git</RepositoryUrl> 
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,5 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingNativeLibrary Include="libDirectoryWatcher.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Tasks.Pack">
+      <Version>6.4.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
