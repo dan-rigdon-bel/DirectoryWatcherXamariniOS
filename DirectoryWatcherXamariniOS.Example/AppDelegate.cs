@@ -1,4 +1,7 @@
 ﻿using Foundation;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 using UIKit;
 
 namespace DirectoryWatcherXamariniOS.Example
@@ -9,6 +12,9 @@ namespace DirectoryWatcherXamariniOS.Example
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
+
+
+        private FileSystemWatcherTouch DocumentsDirectoryWatcher { get; set; }
 
         public override UIWindow Window
         {
@@ -25,7 +31,31 @@ namespace DirectoryWatcherXamariniOS.Example
             // make the window visible
             Window.MakeKeyAndVisible();
 
+            // Start watching the Documents folder...
+            string documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            DocumentsDirectoryWatcher = new FileSystemWatcherTouch(documentsFolder);
+            DocumentsDirectoryWatcher.Changed += OnDirectoryDidChange;
+
+            Task.Run(async () =>
+            {
+                await Task.Delay(5000);
+
+                var filePath = Path.Combine(documentsFolder, "file.txt");
+
+                File.WriteAllText(filePath, "hello");
+
+                await Task.Delay(2000);
+
+                File.Delete(filePath);
+            });
+
             return true;
+        }
+
+        public void OnDirectoryDidChange(object sender, EventArgs args)
+        {
+            Console.WriteLine("Change detected in the Documents folder");
+            // Handle the change...
         }
 
         public override void OnResignActivation(UIApplication application)
@@ -56,7 +86,11 @@ namespace DirectoryWatcherXamariniOS.Example
 
         public override void WillTerminate(UIApplication application)
         {
-            // Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
+            base.WillTerminate(application);
+
+            // Stop watching the Documents folder...
+            DocumentsDirectoryWatcher.Changed -= OnDirectoryDidChange;
+            DocumentsDirectoryWatcher.Dispose(); // This calls Invalidate() on the native watcher.
         }
     }
 }
