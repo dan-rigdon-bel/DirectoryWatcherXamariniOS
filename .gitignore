@@ -4,4 +4,6 @@
 /DirectoryWatcherXamariniOS/bin
 /DirectoryWatcherXamariniOS/obj
 
+.vs/
+
 *.userprefs
