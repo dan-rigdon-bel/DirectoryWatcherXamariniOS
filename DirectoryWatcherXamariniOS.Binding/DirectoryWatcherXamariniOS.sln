@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33205.214
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryWatcherXamariniOS", "DirectoryWatcherXamariniOS.csproj", "{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryWatcherXamariniOS.Binding", "..\DirectoryWatcherXamariniOS.Binding\DirectoryWatcherXamariniOS.Binding.csproj", "{8AAA5AED-49B0-4992-9767-D53D6848E676}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryWatcherXamariniOS.Binding", "DirectoryWatcherXamariniOS.Binding.csproj", "{8AAA5AED-49B0-4992-9767-D53D6848E676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8AAA5AED-49B0-4992-9767-D53D6848E676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8AAA5AED-49B0-4992-9767-D53D6848E676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AAA5AED-49B0-4992-9767-D53D6848E676}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6D9B8E7F-A60E-47EC-BC09-9DAF3C10BFB2}
+		SolutionGuid = {155F8A57-B232-4ACC-8341-651E5BE42AC4}
 	EndGlobalSection
 EndGlobal
