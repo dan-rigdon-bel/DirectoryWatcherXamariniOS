@@ -76,6 +76,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DirectoryWatcher.iOS">
+      <Version>1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
@@ -124,14 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DirectoryWatcherXamariniOS.Binding\DirectoryWatcherXamariniOS.Binding.csproj">
-      <Project>{8aaa5aed-49b0-4992-9767-d53d6848e676}</Project>
-      <Name>DirectoryWatcherXamariniOS.Binding</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

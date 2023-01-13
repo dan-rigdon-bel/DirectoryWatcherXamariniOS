@@ -7,13 +7,13 @@
     <ProjectGuid>{8AAA5AED-49B0-4992-9767-D53D6848E676}</ProjectGuid>
     <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>NativeLibrary</RootNamespace>
+    <RootNamespace>DirectoryWatcherXamariniOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>NativeLibrary</AssemblyName>
+    <AssemblyName>DirectoryWatcherXamariniOS</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackageId>DirectoryWatcher.iOS</PackageId>
     <PackageVersion>1.0.1</PackageVersion>
-    <Authors>OurMTS Team</Authors>
+    <Authors>Victor Kochetkov</Authors>
     <Description>Xamarin.iOS wrapper for the Objective-C DirectoryWatcher class.</Description>
     <RepositoryUrl>https://github.com/VictorKochetkov/DirectoryWatcherXamariniOS.git</RepositoryUrl>
   </PropertyGroup>
@@ -47,7 +47,6 @@
     <Compile Include="libDirectoryWatcher.linkwith.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
-
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Tasks.Pack">
       <Version>6.4.0</Version>
