@@ -4,36 +4,30 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{4C4366ED-E17E-4F92-BD2B-D7E1BCBDB5F4}</ProjectGuid>
+    <ProjectGuid>{8AAA5AED-49B0-4992-9767-D53D6848E676}</ProjectGuid>
+    <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DirectoryWatcherXamariniOS</RootNamespace>
+    <RootNamespace>NativeLibrary</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>DirectoryWatcher.iOS</AssemblyName>
+    <AssemblyName>NativeLibrary</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <PackageId>DirectoryWatcher.iOS</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
-    <Authors>OurMTS Team</Authors>
-    <Description>Xamarin.iOS wrapper for the Objective-C DirectoryWatcher class.</Description>
-    <RepositoryUrl>https://github.com/VictorKochetkov/DirectoryWatcherXamariniOS.git</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -41,24 +35,16 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <ObjcBindingNativeLibrary Include="libDirectoryWatcher.a" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
   <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
     <Compile Include="DirectoryChangedDelegate.cs" />
     <Compile Include="FileSystemWatcherTouch.cs" />
+    <Compile Include="libDirectoryWatcher.linkwith.cs">
+      <DependentUpon>libDirectoryWatcher.a</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NuGet.Build.Tasks.Pack">
-      <Version>6.4.0</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DirectoryWatcherXamariniOS.Binding\DirectoryWatcherXamariniOS.Binding.csproj">
-      <Project>{8aaa5aed-49b0-4992-9767-d53d6848e676}</Project>
-      <Name>DirectoryWatcherXamariniOS.Binding</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
