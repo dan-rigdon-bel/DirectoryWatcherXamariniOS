@@ -6,4 +6,7 @@
 
 .vs/
 
+bin
+obj
+
 *.userprefs
